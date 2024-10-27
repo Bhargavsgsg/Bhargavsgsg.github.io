@@ -5,48 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P. Sai Bhargav | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>P. Sai Bhargav</h1>
         <p>Researcher | Computational Fluid Dynamics | Machine Learning</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#experience">Experience</a>
-            <a href="assets/CV_Academic.pdf" target="_blank">CV</a>
-        </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an academic researcher with interests in Scientific Machine Learning, Scientific Computing, and Turbulence Modeling.</p>
-        <p>Currently working as a research assistant at IISc Bengaluru on extending FastVPINNs for turbulent flows.</p>
-    </section>
+    <nav class="tabs">
+        <button class="tab-button active" data-tab="experience">Experience</button>
+        <button class="tab-button" data-tab="publications">Publications</button>
+        <button class="tab-button" data-tab="cv">CV</button>
+        <button class="tab-button" data-tab="certifications">Certifications</button>
+        <button class="tab-button" data-tab="projects">Projects</button>
+        <button class="tab-button" data-tab="contact">Contact</button>
+    </nav>
 
-    <section id="research">
-        <h2>Research</h2>
-        <ul>
-            <li>
-                <strong>Effect of housing design modifications on fluid flow and heat transfer characteristics</strong> (2022)
-                <a href="https://link.springer.com/chapter/10.1007/978-981-99-7827-4_7" target="_blank">View Paper</a>
-            </li>
-            <li>
-                <strong>Numerical Study on Heat Transfer Enhancement in EV Power Inverters</strong> (2023)
-            </li>
-        </ul>
-    </section>
+    <main>
+        <section class="tab-content active" id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>IISc Bengaluru</strong> - Research Assistant (2024 - Present)</li>
+                <li><strong>IIT Madras</strong> - Graduate Research Assistant (2021 - 2023)</li>
+                <li><strong>Kotak Mahindra Bank</strong> - Data Scientist (2023 - 2024)</li>
+            </ul>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>Research Assistant at IISc Bengaluru (Aug 2024 - Present)</p>
-        <p>Graduate Research Assistant at IIT Madras (May 2021 - July 2023)</p>
-        <p>Data Scientist at Kotak Mahindra Bank (Jul 2023 - Aug 2024)</p>
-    </section>
+        <section class="tab-content" id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="https://link.springer.com/chapter/10.1007/978-981-99-7827-4_7" target="_blank">Effect of housing design modifications on fluid flow and heat transfer</a> (FMFP-2022)</li>
+                <li>Numerical Study on Heat Transfer Enhancement in EV Power Inverters (IHTC-2023)</li>
+            </ul>
+        </section>
+
+        <section class="tab-content" id="cv">
+            <h2>CV</h2>
+            <p><a href="assets/CV_Academic.pdf" target="_blank">Download my CV</a></p>
+        </section>
+
+        <section class="tab-content" id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Oxford Machine Learning Summer School (OxML 2023)</li>
+                <li>Deep Learning Specialization (Ongoing)</li>
+                <li>Natural Language Processing Specialization</li>
+            </ul>
+        </section>
+
+        <section class="tab-content" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Thermal Performance of Electric Motors - Thesis project at IIT Madras</li>
+                <li>Feature Engineering for Banking Stability Models - Kotak Mahindra Bank</li>
+            </ul>
+        </section>
+
+        <section class="tab-content" id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:bhargavsgsg@gmail.com">bhargavsgsg@gmail.com</a></p>
+        </section>
+    </main>
 
     <footer>
         <p>© 2024 P. Sai Bhargav. All rights reserved.</p>
-        <p>Connect: <a href="mailto:bhargavsgsg@gmail.com">bhargavsgsg@gmail.com</a></p>
     </footer>
 </body>
 </html>
