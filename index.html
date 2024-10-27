@@ -3,291 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pochinapeddi Sai Bhargav - Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        nav {
-            background: #2c3e50;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background: #34495e;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        section {
-            margin-bottom: 3rem;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #2c3e50;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: #34495e;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 0.5rem;
-        }
-
-        h3 {
-            font-size: 1.3rem;
-            color: #2c3e50;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-info {
-            margin: 1rem 0;
-            color: #666;
-        }
-
-        .research-interests {
-            background: #f8f9fa;
-            padding: 1rem;
-            border-radius: 4px;
-            margin: 1rem 0;
-        }
-
-        .publication-item {
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background: #f8f9fa;
-            border-radius: 4px;
-        }
-
-        .experience-item {
-            margin-bottom: 2rem;
-        }
-
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.5rem;
-        }
-
-        .experience-title {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-
-        .experience-date {
-            color: #666;
-            font-style: italic;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .certification-item {
-            background: #f8f9fa;
-            padding: 1rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-        }
-
-        .education-item {
-            margin-bottom: 2rem;
-        }
-
-        .education-header {
-            margin-bottom: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-
-            .container {
-                padding: 1rem;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <title>P. Sai Bhargav | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <header>
+        <h1>P. Sai Bhargav</h1>
+        <p>Researcher | Computational Fluid Dynamics | Machine Learning</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#experience">Experience</a>
+            <a href="assets/CV_Academic.pdf" target="_blank">CV</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an academic researcher with interests in Scientific Machine Learning, Scientific Computing, and Turbulence Modeling.</p>
+        <p>Currently working as a research assistant at IISc Bengaluru on extending FastVPINNs for turbulent flows.</p>
+    </section>
+
+    <section id="research">
+        <h2>Research</h2>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
+            <li>
+                <strong>Effect of housing design modifications on fluid flow and heat transfer characteristics</strong> (2022)
+                <a href="https://link.springer.com/chapter/10.1007/978-981-99-7827-4_7" target="_blank">View Paper</a>
+            </li>
+            <li>
+                <strong>Numerical Study on Heat Transfer Enhancement in EV Power Inverters</strong> (2023)
+            </li>
         </ul>
-    </nav>
+    </section>
 
-    <div class="container">
-        <section id="home">
-            <h1>Pochinapeddi Sai Bhargav</h1>
-            <div class="contact-info">
-                <p>(+91) 8790951453 | bhargavsgsg@gmail.com</p>
-            </div>
-            <div class="research-interests">
-                <p>Academic researcher with interests in Scientific Machine Learning (SciML), Scientific Computing, High-Fidelity numerical solver development, and Turbulence Modeling. Past researches include Computational Fluid Dynamics (CFD), Heat Transfer and Thermal management of Electric Vehicles.</p>
-            </div>
-        </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Research Assistant at IISc Bengaluru (Aug 2024 - Present)</p>
+        <p>Graduate Research Assistant at IIT Madras (May 2021 - July 2023)</p>
+        <p>Data Scientist at Kotak Mahindra Bank (Jul 2023 - Aug 2024)</p>
+    </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <div class="education-header">
-                    <h3>Master of Science in Applied Mechanics</h3>
-                    <p>Indian Institute of Technology Madras | September 2023</p>
-                    <p>GPA: 9.2/10</p>
-                </div>
-                <p>Thesis: Thermal Performance of Air and Liquid-Cooled Electric Motors: A Numerical Study</p>
-                <p>Advisor: Prof. K. Arul Prakash</p>
-            </div>
-            <div class="education-item">
-                <div class="education-header">
-                    <h3>Bachelor of Technology in Mechanical Engineering</h3>
-                    <p>JNTUH College of Engineering | September 2020</p>
-                    <p>GPA: 9.83/10 | Rank: 1/60</p>
-                </div>
-                <p>Advisor: Prof. A V Sita Rama Raju</p>
-            </div>
-        </section>
-
-        <section id="research">
-            <h2>Research Experience</h2>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>Research Assistant</h3>
-                    <p>Indian Institute of Science Bengaluru | Aug 2024 - Present</p>
-                </div>
-                <ul>
-                    <li>Conducted extensive literature review on Physics Informed Neural Networks for turbulent flows</li>
-                    <li>Currently working on extending FastVPINNs framework for turbulent flow problems using RANS formulation</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>Graduate Research Assistant</h3>
-                    <p>IIT Madras | May 2021 - July 2023</p>
-                </div>
-                <ul>
-                    <li>Improved the combined thermo-hydraulic performance by 16% through design modifications</li>
-                    <li>Designed cooling channels for 30 KW peripheral liquid cooled PMSM motor</li>
-                    <li>Reduced pressure drop by 33% through detailed numerical parametric studies</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            <div class="publication-item">
-                <p>Sai Bhargav, P., Ganapathi, M., Prakash K.A. (2022). "Effect of housing design modifications on fluid flow and heat transfer characteristics of electrical motor casing: A numerical study", 9th International and 49th National conference of Fluid Mechanics and Fluid Power (FMFP-2022)</p>
-            </div>
-            <div class="publication-item">
-                <p>Ganapathi, M., Sai Bhargav, P., Prakash K.A. (2023). "Numerical Study on Heat Transfer Enhancement in Plate-Fin Heat Sink of SiC MOSFET Power Inverter in Electric Vehicle Applications", 17th International Heat Transfer Conference (IHTC-2023)</p>
-            </div>
-        </section>
-
-        <section id="experience">
-            <h2>Industry Experience</h2>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>Data Scientist</h3>
-                    <p>Kotak Mahindra Bank | Jul 2023 - Aug 2024</p>
-                </div>
-                <ul>
-                    <li>Developed vintage model for loss forecasting of credit cards</li>
-                    <li>Conducted portfolio analysis and participated in budget discussions</li>
-                    <li>Performed banking stability analysis and income estimation</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div>
-                    <h3>Programming</h3>
-                    <p>Python, Fortran, Matlab, SQL</p>
-                </div>
-                <div>
-                    <h3>ML Frameworks</h3>
-                    <p>TensorFlow, PyTorch, scikit-learn</p>
-                </div>
-                <div>
-                    <h3>Numerical Modeling</h3>
-                    <p>Ansys Fluent, OpenFOAM, ICEM-CFD</p>
-                </div>
-                <div>
-                    <h3>Documentation</h3>
-                    <p>LaTeX, MS Office Suite</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <div class="certification-item">
-                <h3>Oxford Machine Learning Summer School (OxML 2023)</h3>
-                <p>Comprehensive course covering ML fundamentals and advanced topics in ML theory</p>
-            </div>
-            <div class="certification-item">
-                <h3>Deep Learning Specialization</h3>
-                <p>Fundamentals of Deep Learning with applications in Computer Vision and NLP</p>
-            </div>
-            <div class="certification-item">
-                <h3>TensorFlow Developer Specialization</h3>
-                <p>TensorFlow for Image classification, Natural Language Processing and Time Series</p>
-            </div>
-        </section>
-    </div>
+    <footer>
+        <p>© 2024 P. Sai Bhargav. All rights reserved.</p>
+        <p>Connect: <a href="mailto:bhargavsgsg@gmail.com">bhargavsgsg@gmail.com</a></p>
+    </footer>
 </body>
 </html>
